@@ -46,21 +46,9 @@ var confirmEnding =  function(str, target) {
         }
 };
         
-        
-        // console.log(str + " " + target);
-        
-    
-        // console.log(str + " " + target);
-        // var arrWordTarget = str[str.length-1];
-        //console.log(str);
-        // var strTarget = arrWordTarget.substr(0, arrWordTarget.length);
-      
-        //console.log(strTarget + " " + arrWordTarget);
-        //console.log(str[str.length-1]);
-
-
-// confirmEnding("Hello World, what  are  you doing?", "worldWTF");
+confirmEnding("Hello World, what  are  you doing?", "worldWTF");
 confirmEnding("Hello Worlds", "worlds");
-// confirmEnding("Hello World, what  are  you doing?", "");
-
-// confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification");
+confirmEnding("Hello World, what  are  you doing?", "");
+confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification");
+confirmEnding("Open sesame", "same");
+confirmEnding("Connor", "n");
