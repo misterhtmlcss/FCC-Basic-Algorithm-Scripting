@@ -33,28 +33,17 @@ var confirmEnding =  function(str, target) {
             loopSize = myEndArrTargetString.length; // myEndArrTargetString is shorter or equal to target, so this is the number of times I loop.
                 } 
         var i = loopSize - 1;
-        // console.log(i + " this is testing what happens with the loopsize on line 37 above my forloop comparison below"); // 'i' is correct here. 
-        // console.log(myEndArrTargetString); // variable is carrying forward it's data from line 28. Why is it undefined below on :(
+
         for (i; i > 0; i--) {
-            // console.log (i);
-            // console.log(target[i]);
-            // console.log(myEndArrTargetString[i] + " testing for data line 43")
-            // var comparisonStr;
+
             if (myEndArrTargetString[i] == target[i]){
                 return true;
-                /*console.log(myEndArrTargetString[i] + " <= same => " + target[i] + " iteration # " + i + " and loopsize is if same this is good. I am testing for data quality and it's being passed from line 48");
-                
-                //substr() 
-                        comparisonStr = myEndArrTargetString.unshift();
-                        console.log(comparisonStr);
-                        }*/
-                 // Working with this string for testing - // confirmEnding("Hello Worlds", "worlds");  
             } else {
                     console.log("Not the same and definitely not similar");
                     return false;
-                    };
-            };
-        };
+                    }
+            }
+        }
 };
         
         
