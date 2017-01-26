@@ -38,8 +38,9 @@ var confirmEnding =  function(str, target) {
 
             if (myEndArrTargetString[i] == target[i]){
                 return true;
+                console.log("returning true " + myEndArrTargetString[i] + " " + myEndArrTargetString);
             } else {
-                    console.log("Not the same and definitely not similar");
+                    console.log("Not the same and definitely not similar ---- returning false! " + myEndArrTargetString[i] + " " + myEndArrTargetString);
                     return false;
                     }
             }
