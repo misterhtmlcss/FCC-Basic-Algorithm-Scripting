@@ -22,7 +22,7 @@ function mutation(arr) {
     var firstString = myArr[0];
     var secondString = myArr[1];
     for (var i = 0; i < secondString.length; i++) {
-        var value = firstString.indexOf(secondString[i]) 
+        var value = firstString.indexOf(secondString[i]);
         if (value === -1) {
             return false;
         }
