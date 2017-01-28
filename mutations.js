@@ -18,10 +18,9 @@ String.prototype.indexOf()
 
 
 function mutation(arr) {
-    
-    var arrToSTring = arr.toString().toLowerCase().split(",");
-    // console.log(arrToSTring); test: to string worked and everything is lowercase
-    //console.log(arr);
+    var arr = arr.toString().toLowerCase().split(","); // all lower case and tested.
+
+    console.log(arr);
 }
 
 
