@@ -18,9 +18,16 @@ String.prototype.indexOf()
 
 
 function mutation(arr) {
-    var arr = arr.toString().toLowerCase().split(","); // all lower case and tested.
-
-    console.log(arr);
+    var myArr = arr.toString().toLowerCase().split(","); // all lower case, split and then tested.
+    var firstString = myArr[0];
+    var secondString = myArr[1];
+    for (var i = 0; i < secondString.length; i++) {
+        var value = firstString.indexOf(secondString[i]) 
+        if (value === -1) {
+            return false;
+        }
+    }
+    return true;
 }
 
 
