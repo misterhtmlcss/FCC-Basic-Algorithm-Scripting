@@ -27,7 +27,7 @@ function mutation(arr) {
             return false;
         }
     }
-    return true;
+    return true
 }
 
 
