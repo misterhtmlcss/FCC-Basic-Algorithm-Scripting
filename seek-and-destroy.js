@@ -10,11 +10,24 @@ Array.prototype.filter()
 */
 
 function destroyer(arr) {
-  var args = Array.from(arguments).slice(1);
-  return arr.filter(function(val) {
-    return !args.includes(val);
-  });
+    //console.log (arguments);
+    var testArray = Array.from(arguments).slice(1)
+    //console.log (testArray, arguments);
+    /*return arr.filter(function(args){ 
+        return !testArray.includes(args)
+    })*/
+    // console.log(testArray, compareArray)
 }
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+// destroyer(["tree", "hamburger", 53], "tree", 53);
+/*
+destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
+destroyer([3, 5, 1, 2, 2], 2, 3, 5);
+destroyer([2, 3, 2, 3], 2, 3);
+*/
+
+
 
 
 /* my original version.
@@ -32,10 +45,3 @@ function destroyer(arr) {
         //console.log(filtered);
 }
 */
-
-destroyer([1, 2, 3, 1, 2, 3], 2, 3);
-
-destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
-destroyer([3, 5, 1, 2, 2], 2, 3, 5);
-destroyer([2, 3, 2, 3], 2, 3);
-destroyer(["tree", "hamburger", 53], "tree", 53);

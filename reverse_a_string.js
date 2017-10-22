@@ -6,8 +6,18 @@
 // Your result must be a string.
 
 // Solution
+//Final version
+
+function reverseString(str) {
+    return str.split("").reverse().join('');
+  }
+  
+  console.log(reverseString("jello"));
+  //console.log(reverseString("howdy"));
 
 
+
+// First version
 function reverseString(str) {
     firstSplit = str.split("");
     reverseOrderSplit = firstSplit.reverse("");
@@ -17,4 +27,5 @@ function reverseString(str) {
 }
 
 reverseString("howdy");
+ 
 
